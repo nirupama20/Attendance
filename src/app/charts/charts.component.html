@@ -1,0 +1,17 @@
+<div class="card border-left-primary shadow">
+    <div class="card-body">
+        <div *ngIf="attendanceData.length>0">  
+            <ngx-charts-bar-vertical
+                [view]="view"
+                [results]="attendanceData"
+                [gradient]="gradient"
+                [xAxis]="showXAxis"
+                [yAxis]="showYAxis"
+                [showXAxisLabel]="showXAxisLabel"
+                [showYAxisLabel]="showYAxisLabel"
+                [xAxisLabel]="xAxisLabel"
+                [yAxisLabel]="yAxisLabel">
+            </ngx-charts-bar-vertical>
+        </div>
+    </div>
+</div>
